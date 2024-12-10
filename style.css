@@ -1,0 +1,137 @@
+/* Add styles to front page */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#d2e8fc;
+}
+
+.header {
+    background-color: #2dcae6;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.main {
+    padding: 50px;
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#b1b5b2;
+    font-size:15px
+
+}
+
+.foot1{
+    display:inline-block;
+    margin: 20px;
+    
+
+}
+
+.foot2{
+    display:inline-block;
+    margin: 20px;
+}
+.foot3{
+    display:inline-block;
+    margin: 20px;
+    
+}
+/* Add styles to login page */
+
+/* Add styles to register page */
+
+/* Add style to forgot password page */
+/* added as  internal css */
+
+
+/* Add styles to home page */
+
+.user-info {
+    float: right;
+    color: #0a1240;
+}
+
+.user-info p {
+    margin-bottom: 5px;
+}
+
+.user-info a {
+    text-decoration: none;
+    color:#0a1240;
+}
+
+
+/* add style  navigation bar  */
+ul.nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color: #3d87b3;
+     
+}
+
+li.nav{
+	float:left;
+	
+}
+
+/*li together */
+li a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration:none;
+}
+
+/*link color to pink when hover*/
+li a:hover{
+	background-color: #0a1240;
+}
+
+/* add style to about us page */
+
+
+.navigation {
+    float: right;
+    margin-top: 10px;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a.active {
+    background-color: #ddd;
+    color: #333;
+}
+
+
+
+  /* Add  styles to  change password page */
+  
+
+

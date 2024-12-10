@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
+    <style>
+        .login-form {
+            background-color: #f2f2f2;
+            padding: 30px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 5px;
+            border-style: solid;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .login-form button {
+            background-color: #3d87b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-form a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+    </header>
+    <main class="main">
+        <div class="login-form">
+            <h2>Login to Your Account</h2>
+            <form action="login-handler.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" name= "button" onclick="submitLogin()" class="button">Login</button>
+                <script>
+                    function submitLogin() {
+                        // Simulate successful login (replace with actual validation)
+                        alert("Login successful!");
+                        window.location.href = "homepage.html"; // Redirect to homepage
+                    }
+                </script>
+
+                <a href="forgot-password.html">Forgot Password?</a>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p>
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+</body>
+
+</html>

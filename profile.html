@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Transfer funds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
+    <style>
+        .profile-info,
+        .profile-actions {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            border-style: solid;
+            background-color: #f2f2f2;
+        }
+        
+        .userimg{
+            height: 150px;
+            width: 150px;
+            align-items: center;
+        }
+
+
+
+
+        .profile-info p {
+            margin-bottom: 10px;
+        }
+
+        .profile-actions a {
+            background-color:#3d87b3 ;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .profile-actions a:hover {
+            background-color: #eee;
+        }
+
+        /* Mask a portion of the account number for security */
+        .profile-info p:nth-child(4) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="homepage.html">Home </a></li>
+            <li class="nav"><a href="#">Transaction</a></li>
+            <li class="nav"><a href="billpayment.html">Bill Payment</a></li>
+            <li class="nav"><a href="contactus.html">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <img src="userimg.png" class="userimg">
+            <p><b>Name:</b> [User Name]</p>
+            <p><b>Email:</b> [User Email]</p>
+            
+            <p><b>Account Number:</b> [Account Number] (Masked for security)</p>
+            <p><b>Account Type:</b> [Account Type] (e.g., Checking, Savings)</p>
+        </div>
+        <div class="profile-actions">
+            <h2>Profile Actions</h2>
+            <a href="change.html">Change Password</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p>
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+
+    </footer>
+</body>
+
+</html>

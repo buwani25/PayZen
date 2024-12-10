@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Transactions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
+    <style>
+        .account-summary,
+        .quick-actions,
+        .transaction-history {
+            flex: 1;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 50px auto;
+            background-color: #f2f2f2;
+            width: 400px;
+            text-align: center;
+            border-style: solid;
+        }
+
+
+        .account-summary h2,
+        .quick-actions h2,
+        .transaction-history h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .quick-actions a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        .quick-actions a:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="homepage.html">Home </a></li>
+            <li class="nav"><a href="#">Transaction</a></li>
+            <li class="nav"><a href="billpayment.html">Bill Payment</a></li>
+            <li class="nav"><a href="contactus.html">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+    </header>
+    <main class="main">
+
+        <div class="account-summary">
+            <h2>Account Summary</h2>
+            <ul>
+                <li>Checking: $[Account Balance]</li>
+                <li>Savings: $[Account Balance]</li>
+            </ul>
+        </div>
+        <div class="quick-actions">
+            <h2>Quick Actions</h2>
+            <a href="transfer.html">Transfer Funds</a>
+            <a href="statement.html">View Statements</a>
+            <a href="profile.html">Manage Profile</a>
+        </div>
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <p>View your most recent transactions here.</p>
+        </div>
+        <footer class="footer">
+            <p class="foot1">support@payzen.com</p>
+            <p class="foot2">&copy; PayZen 2024</p>
+            <p class="foot3">+(555)555 555</p>
+        </footer>
+</body>
+
+</html>

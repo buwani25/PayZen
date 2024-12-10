@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Bill Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
+    <style>
+        /* Add these styles to your existing style.css */
+
+        .form-group {
+            background-color: #f2f2f2;
+            padding: 40px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 5px;
+            border-style: solid;
+        }
+
+        .form-group  h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group  input[type="password"] 
+        .form-group input[type = "date"]
+        .form-group input[type = "number"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        
+
+        button[type="submit"] {
+            background-color:#2e3b8a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        } 
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="homepage.html">Home </a></li>
+            <li class="nav"><a href="transaction.html">Transaction</a></li>
+            <li class="nav"><a href="#">Bill Payment</a></li>
+            <li class="nav"><a href="contactus.html">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="form-group">
+            <h2>Pay Bills</h2>
+            <form action="billpay-handler.php" method="post">
+
+                <label for="payee">Payee:</label>
+                <input type="text" name="payee" id="payee" placeholder="Enter Payee Name" required>
+
+                <label for="account-number">Account Number:</label>
+                <input type="text" name="account-number" id="account-number" placeholder="Enter Payee Account Number"
+                    required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount" min="0.01" step="0.01" required> <br><br>
+
+                <label for="payment-date">Payment Date:</label>
+                <input type="date" name="payment-date" id="payment-date" required> <br><br>
+
+                <button type="submit" class="button" name="btn" id="Bill-btn">Pay</button>
+                    <script>
+                        const billBtn = document.getElementById("Bill-btn");
+                        billBtn.addEventListener("click", handleBill);
+                      
+                        function handleBill(event) {
+                          event.preventDefault(); // Prevent default form submission
+                          // Simulate successful registration (replace with actual validation)
+                          alert("Payment successful!");
+                          window.location.replace("homepage.html"); // Redirect to homepage
+                        }
+                      </script>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p> 
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+    </footer>
+</body>
+
+</html>

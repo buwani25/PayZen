@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-info,
+        .contact-form {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .contact-info{
+            margin:30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-form{
+            border-style: solid;
+            background-color: #f2f2f2;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"] {
+            width: 90%;
+            padding: 9px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form textarea {
+            width: 90%;
+            padding: 9px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form button {
+            background-color: #3d87b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .contact-image {
+            flex: 1;
+            /* Allocate equal space to the image */
+            padding: 20px;
+        }
+
+        .contact-image img {
+            width: 100%;
+            /* Scale image to fit container */
+            display: block;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="homepage.html">Home </a></li>
+            <li class="nav"><a href="transaction.html">Transaction</a></li>
+            <li class="nav"><a href="billpayment.html">Bill Payment</a></li>
+            <li class="nav"><a href="#">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+    </header>
+    <main class="main" style="background-color:#d2e8fc;">
+        <div class="contact-image">
+            <img src="contact_image.jpg" alt="Contact Us Image">
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Phone: (555) 555-5555</p>
+            <p>Email: <a href="mailto:support@payzen.com">support@payzen.com</a></p>
+            <p>Mailing Address: PayZen, 123 Main St., Anytown, CA 12345</p>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="contact-handler.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="button" name="button" id="contact-btn">Send Message</button>
+                    <script>
+                        const contactBtn = document.getElementById("contact-btn");
+                        contactBtn.addEventListener("click", handleContact);
+                      
+                        function handleContact(event) {
+                          event.preventDefault(); // Prevent default form submission
+                          // Simulate successful registration (replace with actual validation)
+                          alert("Message has sent!");
+                          window.location.replace("homepage.html"); // Redirect to homepage
+                        }
+                      </script>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p>
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+    </footer>
+</body>
+
+</html>

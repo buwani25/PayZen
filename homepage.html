@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Home Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .profile-info,
+        .profile-actions {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            border-style: solid;
+        }
+
+        .profile-info p {
+            margin-bottom: 10px;
+        }
+
+        .profile-actions a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .profile-actions a:hover {
+            background-color: #eee;
+        }
+
+        /* Mask a portion of the account number for security */
+        .profile-info p:nth-child(4) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 150px;
+        }
+
+        
+        a {
+            background-color:#2dcae6;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: #2e3b8a;
+        }
+        
+.column {
+    float: left;
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    background-color: white;
+  }
+
+  .container {
+    padding: 18px;
+    text-align: center;
+  }
+
+  .row img{
+    width: 304.35px;
+    height:450.61px;
+
+  }
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+   
+  }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="#">Home </a></li>
+            <li class="nav"><a href="transaction.html">Transaction</a></li>
+            <li class="nav"><a href="billpayment.html">Bill Payment</a></li>
+            <li class="nav"><a href="contactus.html">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="user-info">
+            <a href="logout.html">Logout</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="row">
+            <div class="column">
+                <div class="card" style="background-color: white;">
+                    <img src="transImg.jpg" alt="transaction pic1" style="width:100%">
+                    <div class="container">
+
+                        <div class="tran">
+                            <a href="transaction.html">TRANSACTION</a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="billimg.jpg" alt="bill pic2" style="width:100%">
+                    <div class="container">
+
+                        <div class="tran">
+                            <a href="billpayment.html">BILL PAYMENTS</a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p>
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+
+    </footer>
+</body>
+
+</html>

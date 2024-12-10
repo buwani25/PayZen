@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayZen - Transfer funds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
+    <style>
+        .funds {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 50px auto;
+            width: 600px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            flex: 1;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 50px auto;
+            background-color: #f2f2f2;
+            width: 400px;
+            text-align: left;
+            border-style: solid;
+
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            /* Allow users to resize the textarea */
+        }
+
+        button[type="submit"] {
+            background-color:#3d87b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="Payzen.png" alt="PayZen Logo">
+        <h1>PayZen Online Banking</h1>
+        <ul class="nav">
+            <!-- # - a page -->
+            <li class="nav"><a href="homepage.html">Home </a></li>
+            <li class="nav"><a href="#">Transactions</a></li>
+            <li class="nav"><a href="billpayment.html">Bill Payment</a></li>
+            <li class="nav"><a href="contactus.html">Contact us</a></li>
+            <li class="nav"><a href="aboutus.html">About us</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="form-group">
+            <h2>Transfer Funds</h2>
+            <form action="transfer-handler.php" method="post">
+                
+                    <label for="from-account">From Account:</label>
+                    <select name="from-account" id="from-account" aria-placeholder="Account type">
+                        <option value="checking">Current</option>
+                        <option value="savings">Savings</option>
+                    </select> <br><br>
+                
+                    <label for="to-account">To Account:</label>
+                    <input type="text" name="to-account" id="to-account" placeholder="Enter Account Number" required><br><br>
+                
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" id="amount" min="0.01" step="0.01" required><br><br>
+                
+                    <label for="description">Description (Optional):</label>
+                    <textarea name="description" id="description" rows="3"></textarea> <br><br>
+                
+                    <button type="submit" class="button" name ="button" id="Transfer-btn">Transfer Funds</button>
+                    <script>
+                        const transferBtn = document.getElementById("Transfer-btn");
+                        transferBtn.addEventListener("click", handleTransaction);
+                      
+                        function handleTransaction(event) {
+                          event.preventDefault(); // Prevent default form submission
+                          // Simulate successful registration (replace with actual validation)
+                          alert("Transaction successful!");
+                          window.location.replace("homepage.html"); // Redirect to homepage
+                        }
+                      </script>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="foot1">support@payzen.com</p>
+        <p class="foot2">&copy; PayZen 2024</p>
+        <p class="foot3">+(555)555 555</p>
+
+    </footer>
+</body>
+
+</html>
